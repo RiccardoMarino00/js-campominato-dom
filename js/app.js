@@ -3,6 +3,7 @@ const containerElement = document.querySelector(".container");
 // Recupero bottone play
 const btnPlay = document.querySelector(".play-btn");
 let selectElement = document.getElementById("difficulty");
+const result = document.getElementById("risultato")
 
 
 
@@ -33,14 +34,18 @@ function startGame (){
         squareElement.innerHTML = num
         // Aggiungo un event listener che cambia il colore del quadrato in azzurro al mio click e ad un ulteriore click lo toglie ( grazie a toggle)
         squareElement.addEventListener("click", function () {
-            console.log("Click sulla casella numero ", num)
+            // SE gioco non è ancora finito
+            
             // SE num è presente in array impostare bg-red
             if (arrayRandomNumber.includes(num) === true){
                squareElement.classList.add("bg-red");
+               containerElement.style.pointerEvents = "none"
+               result.innerHTML = `HAI PERSO!`
+               console.log("La casella ", num, "è una bomba, Hai perso!")
             } 
             else {
                // ALTRIMENTI bg-azzurro
-               squareElement.classList.toggle("bg-lightblue");
+               squareElement.classList.add("bg-lightblue");
             }
             
         })

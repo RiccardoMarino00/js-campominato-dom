@@ -12,7 +12,38 @@ a{
 body {
     background-color: rgb(105, 182, 17);
     height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+  
 
 .container {
     max-width: 700px;
@@ -43,6 +74,18 @@ body {
 }
 
 .play-btn {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(35, 5, 123);
+    font-weight: bolder;
+}
+
+#risultato{
+    font-weight: bold;
+}
+
+#difficulty{
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
