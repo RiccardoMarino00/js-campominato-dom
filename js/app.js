@@ -1,5 +1,7 @@
 // Cose da gestire ancora
 // 1) il calcolo del punteggio
+     // Al click su una cella azzurra punteggio + 1
+
 // 2) partita termina quando non ci sono altri numeri cliccabili
 
 
@@ -42,17 +44,21 @@ function startGame (){
         // Aggiungo un event listener che cambia il colore del quadrato in azzurro al mio click e ad un ulteriore click lo toglie ( grazie a toggle)
         squareElement.addEventListener("click", function () {
             // SE gioco non è ancora finito
-            
+            // calcolo punteggio
+            let score = 0;
             // SE num è presente in array impostare bg-red
             if (arrayRandomNumber.includes(num) === true){
                squareElement.classList.add("bg-red");
                containerElement.style.pointerEvents = "none"
-               result.innerHTML = `HAI PERSO!`
+               result.innerHTML = `TRY AGAIN!`
                console.log("La casella ", num, "è una bomba, Hai perso!")
             } 
             else {
+               score++;
                // ALTRIMENTI bg-azzurro
                squareElement.classList.add("bg-lightblue");
+               console.log(score)
+
             }
             
         })
@@ -117,9 +123,25 @@ function randomNumberGenerator() {
     return arrayRandomNumber
 }
 
+
      
+// var incrementor = document.getElementById('incrementor');
+// incrementor.addEventListener('click', plusOne);
 
+// function plusOne() {
+//   const squareElement = document.createElement("div"); // obj
+//   squareElement.addEventListener("click", function(){
+//     let score = 0;
+//     let count = document.getElementById('score');
+//     score+=
+//     count.textContent = score.toString();
+//     return score
 
+//   })
+// }
+// plusOne()
+
+// console.log(plusOne())
 
 
 

@@ -10,7 +10,9 @@ a{
 }
 
 body {
-    background-color: rgb(105, 182, 17);
+    /* background-color: rgb(255, 255, 255); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(7,86,86,1) 50%, rgba(32,36,43,1) 89%);
     height: 100vh;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -46,19 +48,21 @@ body {
   
 
 .container {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
     display: grid;
-    /* grid-template-columns: repeat(10, 1fr); */
+    background-color: rgb(32, 36, 43);
+    border-radius: 10px;
 }
 
 .square {
     aspect-ratio: 1/1;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(7, 86, 86);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(7, 86, 86);
+    border-radius: 10px;
 }
 
 .bg-lightblue {
@@ -78,23 +82,36 @@ body {
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(35, 5, 123);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
+    background-color: darkcyan;
 }
 
+.logo{
+    aspect-ratio: 1/1;
+    width: 50px;
+}
+
+
+
 #risultato{
-    font-weight: bold;
+    /* font-weight: bold; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: red;
+    color: rgb(101, 15, 15);
+    /* font-size: 50px; */
+    font: italic small-caps 300 70px/200px Impact;
+    text-shadow: 0 0 20px #fff;
 }
 
 #difficulty{
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(35, 5, 123);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
+    background-color: darkcyan;
+
 }
