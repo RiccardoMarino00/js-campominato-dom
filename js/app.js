@@ -1,3 +1,10 @@
+// Cose da gestire ancora
+// 1) il calcolo del punteggio
+// 2) partita termina quando non ci sono altri numeri cliccabili
+
+
+
+
 // Recupero elemento contenitore
 const containerElement = document.querySelector(".container");
 // Recupero bottone play
@@ -112,7 +119,7 @@ function randomNumberGenerator() {
 
      
 
-  
+
 
 
 
