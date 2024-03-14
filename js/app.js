@@ -63,129 +63,51 @@ function sizeGrid (){
 }
 
 
-// function randomNumberGenerator (){
-//     let arrayRandomNumber = [];
-//     let level = selectElement.value;
-//     if (level === "1"){
-//         let iEasy = 0;
-//         do{
-//            iEasy++
-//            arrayRandomNumber = parseInt(Math.floor(Math.random()*100) + 1);
-//            console.log(arrayRandomNumber)
-//         } while (iEasy < 16)
-//     } else if ( level === "2"){
-//         let iMedium = 0;
-//         do{
-//           iMedium++
-//           arrayRandomNumber = parseInt(Math.floor(Math.random()*81) + 1);
-//           console.log(arrayRandomNumber)
-//         } while (iMedium < 16)
-//     } else {
-//         let iHard = 0;
-//         do{
-//           iHard++
-//           arrayRandomNumber = parseInt(Math.floor(Math.random()*49) + 1);
-//           console.log(arrayRandomNumber)
-//         } while (iHard < 16)
-//     }
-//    return arrayRandomNumber
-// }
-// randomNumberGenerator()
-
-
-
-
-  
-
-
-        function randomNumberGenerator (){
-            let arrayRandomNumber = [];
-            let level = selectElement.value;
-            if (level === "1"){
-                let iEasy = 0;
-                do{
-                   number = parseInt(Math.floor(Math.random()*100) + 1);
-                   if (!arrayRandomNumber.includes(number)){
-                       arrayRandomNumber.push(number);
-                       iEasy++
-                   }
-                } while (iEasy < 16)
-                console.log(arrayRandomNumber)
-
-            } else if ( level === "2"){
-                let iMedium = 0;
-                do{
-                    number = parseInt(Math.floor(Math.random()*81) + 1);
-                    if (!arrayRandomNumber.includes(number)){
-                        arrayRandomNumber.push(number);
-                        iMedium++
-                    }
-                 } while (iMedium < 16)
-            } else {
-                let iHard = 0;
-                do{
-                    number = parseInt(Math.floor(Math.random()*49) + 1);
-                    if (!arrayRandomNumber.includes(number)){
-                        arrayRandomNumber.push(number);
-                        iHard++
-                    }
-                 } while (iHard < 16)
+function randomNumberGenerator() {
+    let arrayRandomNumber = [];
+    let level = selectElement.value;
+    if (level === "1") {
+        let iEasy = 0;
+        do {
+            number = parseInt(Math.floor(Math.random() * 100) + 1);
+            if (!arrayRandomNumber.includes(number)) {
+                arrayRandomNumber.push(number);
+                iEasy++
             }
-           return arrayRandomNumber
-        }
+        } while (iEasy < 16)
+        console.log(arrayRandomNumber)
 
-        // randomNumberGenerator ()
+    } else if (level === "2") {
+        let iMedium = 0;
+        do {
+            number = parseInt(Math.floor(Math.random() * 81) + 1);
+            if (!arrayRandomNumber.includes(number)) {
+                arrayRandomNumber.push(number);
+                iMedium++
+            }
+        } while (iMedium < 16)
+        console.log(arrayRandomNumber)
+
+    } else {
+        let iHard = 0;
+        do {
+            number = parseInt(Math.floor(Math.random() * 49) + 1);
+            if (!arrayRandomNumber.includes(number)) {
+                arrayRandomNumber.push(number);
+                iHard++
+            }
+        } while (iHard < 16)
+        console.log(arrayRandomNumber)
+
+    }
+    return arrayRandomNumber
+}
+
+     
 
   
 
 
-// // Funzione che genera numeri unici  da 1 a 100 (BOMBE)
-// function randomNumberGeneratorEasy() {
-//     let arrayRandomNumber = [];
-//     let iEasy = 0;
-//     do {
-//         number = parseInt(Math.floor(Math.random() * 100) + 1);
-//         if (!arrayRandomNumber.includes(number)) {
-//             arrayRandomNumber.push(number);
-//             iEasy++
-//         }
-//     } while (iEasy < 16)
-//     // console.log(arrayRandomNumber)
-//     return arrayRandomNumber
-// }   
-
-// // Funzione che genera numeri unici  da 1 a 81   (BOMBE)
-// function randomNumberGeneratorMedium() {
-//     let arrayRandomNumber = [];
-//     let iMedium = 0;
-//     do {
-//         number = parseInt(Math.floor(Math.random() * 81) + 1);
-//         if (!arrayRandomNumber.includes(number)) {
-//             arrayRandomNumber.push(number);
-//             iMedium++
-//         }
-//     } while (iMedium < 16)
-//     // console.log(arrayRandomNumber)
-//     return arrayRandomNumber
-
-
-// }
-
-// // Funzione che genera numeri unici  da 1 a 49    (BOMBE)
-// function randomNumberGeneratorHard() {
-//     let arrayRandomNumber = [];
-//     let iHard = 0;
-//     do {
-//         number = parseInt(Math.floor(Math.random() * 49) + 1);
-//         if (!arrayRandomNumber.includes(number)) {
-//             arrayRandomNumber.push(number);
-//             iHard++
-//         }
-//     } while (iHard < 16)
-//     // console.log(arrayRandomNumber)
-//     return arrayRandomNumber
-
-// }   
 
 
 
