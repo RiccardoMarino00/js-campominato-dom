@@ -3,6 +3,7 @@ const containerElement = document.querySelector(".container");
 // Recupero bottone play
 const btnPlay = document.querySelector(".play-btn");
 let  selectElement = document.getElementById("difficulty");
+let arrayRandomNumber = [];
 
 
 
@@ -32,11 +33,12 @@ function startGame (){
         squareElement.innerHTML = num
         // Aggiungo un event listener che cambia il colore del quadrato in azzurro al mio click e ad un ulteriore click lo toglie ( grazie a toggle)
         squareElement.addEventListener("click", function () {
-            console.log("Clicl sulla casella numero ", num) 
+            console.log("Click sulla casella numero ", num)
             // SE num è presente in array impostare bg-red
-            if (arrayRandomNumber.includes(num)){
-               squareElement.classList.toggle("bg-red");
-            } else {
+            if (arrayRandomNumber.includes(num) === true){
+               squareElement.classList.add("bg-red");
+            } 
+            else {
                // ALTRIMENTI bg-azzurro
                squareElement.classList.toggle("bg-lightblue");
             }
