@@ -2,8 +2,7 @@
 const containerElement = document.querySelector(".container");
 // Recupero bottone play
 const btnPlay = document.querySelector(".play-btn");
-let  selectElement = document.getElementById("difficulty");
-let arrayRandomNumber = [];
+let selectElement = document.getElementById("difficulty");
 
 
 
@@ -11,6 +10,7 @@ let arrayRandomNumber = [];
 btnPlay.addEventListener("click", startGame)
 
 function startGame (){
+    let arrayRandomNumber = randomNumberGenerator();
     // Dichiaro una costante contenente la dimensione di un lato
     const size = sizeGrid();
     // Dichiaro una costante contenente il numero di celle da far stare nel contenitore attraverso il calcolo dell'area del contenitore (quadrato)
@@ -46,7 +46,7 @@ function startGame (){
         })
     }
 
-    randomNumberGenerator ()
+    
 
 }
 
